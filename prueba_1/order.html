@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Order Detail</title>
+</head>
+<body>
+    <h1>Order Detail</h1>
+    <p>Order ID: {{.OrderID}}</p>
+    <p>Date: {{.Date}}</p>
+    <h2>Client Information</h2>
+    <p>Name: {{.Client.Name}}</p>
+    <p>Email: {{.Client.Email}}</p>
+    <p>Phone: {{.Client.Phone}}</p>
+    <h3>Address Information</h3>
+    <p>Street: {{.Client.Address.Street}}</p>
+    <p>Number: {{.Client.Address.Number}}</p>
+    <p>City: {{.Client.Address.City}}</p>
+    <p>Country: {{.Client.Address.Country}}</p>
+    <p>Postal Code: {{.Client.Address.PostalCode}}</p>
+    <h2>Items</h2>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Detail</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        {{range .Items}}
+        <tr>
+            <td>{{.Product}}</td>
+            <td>{{.Detail}}</td>
+            <td>{{.Quantity}}</td>
+            <td>{{.Price}}</td>
+        </tr>
+        {{end}}
+    </table>
+    <p>Total: {{.Total}}</p>
+</body>
+</html>

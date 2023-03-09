@@ -1,0 +1,32 @@
+{
+    "order_id": 1234,
+    "date": "2023-03-07",
+    "client": {
+      "name": "Jhon Dee",
+      "email": "jhondee@gmail.com",
+      "phone": "555-1234",
+      "adress":
+      {
+        "street": "New Street",
+        "number": 123,
+        "city": "Salt Lake City",
+        "country": "United States of America",
+        "posta_code": 5016
+      }
+    },
+    "items": [
+      {
+        "product": "Shirt",
+        "detail": "This is a product detail",
+        "quantity": 2,
+        "price": 25.99
+      },
+      {
+        "product": "Pants",
+        "detail": "This is a product detail",
+        "quantity": 1,
+        "price": 35.99
+      }
+    ],
+    "total": 87.97
+  }
