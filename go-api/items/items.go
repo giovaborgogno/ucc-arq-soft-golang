@@ -10,19 +10,10 @@ type Item struct {
 const ItemStore = "Nike tienda oficial"
 
 func GetItem() *Item {
-	// return &Item{
-	// 	Title:       "Zapatillas",
-	// 	Description: "Nuevas zapatillas",
-	// 	Price:       30000,
-	// 	HasTaxes:    false,
-	// }
-
-	newItem := Item{
+	return &Item{
 		Title:       "Zapatillas",
 		Description: "Nuevas zapatillas",
 		Price:       30000,
 		HasTaxes:    false,
 	}
-
-	return &newItem
 }
